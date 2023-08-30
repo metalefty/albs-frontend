@@ -12,8 +12,8 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
-          node-version: 12
+          node-version: 14
       - name: Install dependecies
-        run: npm i
+        run: npm ci
       - name: Run build
         run: npm run build
